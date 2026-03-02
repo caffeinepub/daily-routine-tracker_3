@@ -1,0 +1,33 @@
+{
+  "name": "Daily Routine Tracker",
+  "short_name": "DailyTracker",
+  "description": "Gamified daily habit tracker — earn coins, build streaks, level up.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0f0f1a",
+  "theme_color": "#7c3aed",
+  "icons": [
+    {
+      "src": "/assets/generated/pwa-icon.dim_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/generated/pwa-icon.dim_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Today's Tasks",
+      "short_name": "Today",
+      "description": "View and complete today's habits",
+      "url": "/"
+    }
+  ],
+  "categories": ["lifestyle", "productivity", "health"]
+}

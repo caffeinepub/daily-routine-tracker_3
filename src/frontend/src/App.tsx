@@ -1,6 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { useEffect, useRef, useState } from "react";
 import BottomNav from "./components/BottomNav";
+import InstallPrompt from "./components/InstallPrompt";
 import { useActor } from "./hooks/useActor";
 import { useInternetIdentity } from "./hooks/useInternetIdentity";
 import AchievementsPage from "./pages/AchievementsPage";
@@ -78,6 +79,7 @@ export default function App() {
     <div className="min-h-screen bg-background flex flex-col">
       <main className="flex-1 pb-20 overflow-y-auto">{renderPage()}</main>
       <BottomNav currentPage={currentPage} onNavigate={setCurrentPage} />
+      <InstallPrompt />
       <Toaster richColors position="top-center" />
     </div>
   );
